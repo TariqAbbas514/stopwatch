@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class-17</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+		 background-color: black;
+         text-align: center;
+		}
+		#watch{
+			width: 400px;
+			 background-color: orange;
+			    border-radius: 15px;
+		}
+
+		h1{
+		color: #000;
+		display: inline-block;
+		background-color: #fff; 
+		height: 60px;
+		 align-items: center;
+		}
+		 .dot{
+			color: orange;
+			display: inline-block;
+		}
+		button{
+			    background-color: orange;
+			    letter-spacing: 0.5px;
+			    font-weight: bold;
+			    font-size: 30px;
+			    border-radius: 10px;
+			    padding: 1px 60px;
+		}
+		/*ul li{
+			color: orange;
+		}*/
+		.left{
+				text-align: left;
+				color: orange;
+		}
+div{
+	margin-bottom: 15px;
+}
+ul{
+	font-weight: bold;
+	font-size: 25px;
+	}
+	</style>
+}
+}
+</head>
+<body>
+	
+<div class="col-sm-12">
+	<h1 id="watch" col-lg-3 col-sm-10>Stop Watch</h1>
+</div>
+<div class="col-sm-12">
+   <h1 id="min" class="col-lg-2 col-sm-3">00</h1>
+   <h1 class="dot" class="col-lg-1 col-sm-1">:</h1>
+   <h1 id="sec" class="col-lg-2 col-sm-3">00</h1>
+   <h1 class="dot" class="col-lg-1 col-sm-1">:</h1>
+   <h1 id="msec" class="col-lg-2 col-sm-4">00</h1>
+</div>
+
+<div class="col-sm-12">
+   <button onclick="start()" id="start">Start</button>
+   <button onclick="stop()"  id="stop">Pause</button>
+   <button onclick="reset()"  id="reset">Reset</button>	
+</div>
+<div class="left">
+	<div><img src="arrow.png" width="50px" height="150px"></div>
+	<h2 style="font-weight: bold;">Guide</h2>
+	<ul>
+		<li>Start stopwatch by clicking the "Start Button".</li>
+		<li>"Pause/stop"  the stopwatch by clicking the "Pause Button".</li>
+		<li>Reset stopwatch by clicking first the "Pause Button" then you will be reset by clicking the "Reset Button".</li>
+	</ul>
+	</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
